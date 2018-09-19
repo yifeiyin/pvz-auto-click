@@ -1,6 +1,8 @@
 # pvz-auto-click
 This is a cheating script which automatically collects suns in Plants vs. Zombies.
 
+See showcase video on [YouTube](https://github.com/yifeiyin/pvz-auto-click/).
+
 I am too lazy to express my thoughts in another language for now. Maybe I will, maybe not.
 
 

@@ -157,9 +157,9 @@ PvzSunAutoCollect::PvzSunAutoCollect() {
 //====================
 
 void PvzSunAutoCollect::Capture() {
-    system("screencapture -R '0, 23, 799, 622' /Users/yinyifei/Developer/OpenCV-Projects/_IMGLIB/real-time-data/a.png");
+    system("screencapture -R '0,23,799,622' ./a.png");
     imgSrc.release();
-    imgSrc = imread("/Users/yinyifei/Developer/OpenCV-Projects/_IMGLIB/real-time-data/a.png", IMREAD_COLOR);
+    imgSrc = imread("./a.png", IMREAD_COLOR);
     assert(imgSrc.data != nullptr);
     imgCropped.release();
     imgCropped = AutoCrop(imgSrc);

@@ -271,7 +271,7 @@ void PvzSunAutoCollect::Start() {
             lastTimeMousePositionRecorded = GetCurrentTime();
         }
 
-        if (GetTimeSince(lastTimeDetected) > DETECTION_TIME_INTERVAL) {
+        if (GetTimeSince(lastTimeDetected) > DETECTION_TIME_INTERVAL || lastTimeDetected < DETECTION_TIME_INTERVAL) {
             Capture();
             Detect();
             lastTimeDetected = GetCurrentTime();
